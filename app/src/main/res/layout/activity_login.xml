@@ -114,6 +114,21 @@
         android:textColor="@color/white"
         android:textStyle="bold" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoogleSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Continuar con Google"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        app:icon="@drawable/ic_google"
+        app:iconTint="@null"
+        app:iconGravity="textStart"
+        android:padding="12dp"
+        style="@style/Widget.Material3.Button.Icon"
+        />
+
     <!-- Botón de Registro -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnRegister"
