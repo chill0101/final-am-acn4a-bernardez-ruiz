@@ -73,7 +73,7 @@ Desarrollar una aplicación Android utilizando Java que incluya múltiples panta
 
 ---
 
-## Funcionalidades base Implementadas
+## Funcionalidades Implementadas
 
 ### Pantallas Principales
 1. **MainActivity** - Pantalla de bienvenida con logo y background en loop
@@ -81,22 +81,18 @@ Desarrollar una aplicación Android utilizando Java que incluya múltiples panta
 3. **ReactionGameActivity** - Primer juego prototipo de tiempo de reacción
 4. **InDevelopmentActivity** - Pantalla para juegos en desarrollo, se utiliza al seleccionar juegos no implementados
 
-## Funcionalidades Avanzadas Implementadas
-
 ### Sistema de Autenticación Completo
 - **Registro de usuarios** con email y contraseña
 - **Integración con Firebase Authentication**
 - **Gestión de sesiones** persistentes
-- **Pantalla de bienvenida personalizada** por usuario
-- **PENDING para el final**: Integración con Google Sign-In y encriptación
+- **Integración con Google Sign-In**
 
 ### Sistema de Puntuaciones y Rankings
 - **Puntuaciones locales** para cada juego
 - **Leaderboard global** con Firebase Firestore
 - **Ranking por juego** individual
-- **Sistema de mejores puntajes** personales
 - **Comparación con otros jugadores**
-- **PENDING para el final**: Implementación de logros
+- **FINALMENTE QUEDÓ PENDING**: Implementación de logros
 
 ### Estadísticas y Logros
 - **Pantalla "My Stats"** con estadísticas personales
@@ -116,23 +112,23 @@ Desarrollar una aplicación Android utilizando Java que incluya múltiples panta
 
 ### Estructura de Clases (17 Activities)
 ```
-├── MainActivity.java              # Pantalla inicial con verificación de login
-├── LoginActivity.java             # Sistema de autenticación
-├── GameMenuActivity.java          # Menú principal reorganizado
-├── ResultsActivity.java           # Pantalla de resultados unificada
-├── LeaderboardActivity.java       # Rankings globales
-├── MyStatsActivity.java           # Estadísticas personales
-├── AchievementsActivity.java      # Sistema de logros
+├── MainActivity.java              
+├── LoginActivity.java             
+├── GameMenuActivity.java          
+├── ResultsActivity.java           
+├── LeaderboardActivity.java       
+├── MyStatsActivity.java           
+├── AchievementsActivity.java      
 │
-├── ReactionGameActivity.java      # Juego original de reacción primera entrega
-├── SequenceGameActivity.java      # Juego de secuencias
-├── ColorChangeGameActivity.java   # Juego de cambio de colores
-├── LightSequenceGameActivity.java # Simon Says
-├── ShapeMatchingGameActivity.java # Juego de formas
-├── TapTargetActivity.java         # Juego de objetivos
-├── FlagGameActivity.java          # Juego de banderas
+├── ReactionGameActivity.java      
+├── SequenceGameActivity.java      
+├── ColorChangeGameActivity.java   
+├── LightSequenceGameActivity.java 
+├── ShapeMatchingGameActivity.java 
+├── TapTargetActivity.java         
+├── FlagGameActivity.java          
 │
-└── InDevelopmentActivity.java     # Placeholder para futuros juegos
+└── InDevelopmentActivity.java     
 ```
 
 ### Organización de Packages
@@ -330,6 +326,7 @@ annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 
 
 ![Menú de Juegos](docs/images/vista-activity_game_menu.png)
+
 **GameMenuActivity - Menú de Selección**  
 
 ---
@@ -429,6 +426,7 @@ annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 - Diseño consistente con el resto de la app y un perezoso de chill pero laborioso
 
 ![Pantalla de Desarrollo](docs/images/vista-in-development-screen-xml.png)
+
 **InDevelopmentActivity - En Desarrollo**
 
 ### Nuevas Pantallas Implementadas
@@ -439,11 +437,15 @@ annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 - **Feedback visual** para estados de carga
 - **Navegación fluida** entre login y registro
 
+![Pantalla de Login](docs/images/vista-activity_login.png)
+
 #### Leaderboards Globales
 - **RecyclerView** para mostrar rankings
 - **Diseño de cards** para cada entrada del ranking
 - **Filtros por juego** individual
 - **Actualización en tiempo real** desde Firebase
+
+![Pantalla de Rankings](docs/images/vista-activity_leaderboard.png)
 
 #### My Stats (Estadísticas Personales)
 - **Dashboard** con métricas personales
@@ -451,11 +453,15 @@ annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
 - **Mejores puntajes** por juego
 - **Estadísticas comparativas**
 
-#### Achievements (Sistema de Logros)
+![Pantalla de Estadísticas](docs/images/vista-activity_my_stats.png)
+
+#### Achievements (Sistema de Logros) -- PENDING
 - **Grid de logros** desbloqueables
 - **Progreso visual** hacia siguiente logro
 - **Categorías** por tipo de juego
 - **Recompensas** por completar desafíos
+
+![Pantalla de Logros](docs/images/vista-activity_achievements.png)
 
 ---
 
